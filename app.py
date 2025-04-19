@@ -87,6 +87,7 @@ elif choice == "Store Data":
                     }
             users[username][key_hash]["data"].append(encrypted_text)
             save_users(users)
+            st.success("Data stored successfully!")
     else:
         st.subheader("You have to login first to use this!")
 
